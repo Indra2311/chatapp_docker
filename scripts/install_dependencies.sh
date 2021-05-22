@@ -2,6 +2,8 @@
    sudo rm -rf /home/ubuntu/new_chatapp/.idea
    sudo rm -rf /home/ubuntu/new_chatapp/.github
    sudo rm -rf /home/ubuntu/new_chatapp/appspec.yml
+   sudo rm -rf /home/ubuntu/new_chatapp/scripts
+   
 if [ -d /home/ubuntu/new_chatapp/fundoo ]; then
    sudo rm -rf /home/ubuntu/new_chatapp/fundoo
 fi
