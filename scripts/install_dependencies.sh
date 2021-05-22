@@ -1,5 +1,10 @@
 #!/bin/bash
-cd /home/ubuntu/new_chatapp/
-sudo rm -f requirements.txt
+   sudo rm -rf /home/ubuntu/new_chatapp/.idea
+   sudo rm -rf /home/ubuntu/new_chatapp/.github
 
-sudo systemctl stop chatapp
+if [ -d /home/ubuntu/new_chatapp/fundoo ]; then
+   sudo rm -rf /home/ubuntu/new_chatapp/fundoo
+fi
+if [ -f /home/ubuntu/new_chatapp/requirements.txt ]; then
+    sudo rm -rf /home/ubuntu/new_chatapp/requirements.txt
+fi    
