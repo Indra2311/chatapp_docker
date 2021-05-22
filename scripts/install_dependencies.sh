@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo rm -f requirements.txt
+sudo rm -r ~/home/ubuntu/new_chatapp
 sudo systemctl stop chatapp
