@@ -1,7 +1,4 @@
 #!/bin/bash
-   sudo su
-   service codedeploy-agent stop
-   service codedeploy-agent start
    sudo rm -rf /home/ubuntu/new_chatapp/.idea
    sudo rm -rf /home/ubuntu/new_chatapp/.github
    sudo rm -rf /home/ubuntu/new_chatapp/appspec.yml
