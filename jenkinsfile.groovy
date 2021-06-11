@@ -11,8 +11,8 @@ pipeline {				//indicate the job is written in Declarative Pipeline
         stage ("build") {		//an arbitrary stage name
             steps {
                 sh 'rsync -r -e  "ssh -i /home/ubuntu/key.pem" /var/lib/jenkins/workspace/Chatapp ubuntu@10.0.3.134:/home/ubuntu/'	//this is where we specify which job to invoke.
-                sh 'ssh -i /home/ubuntu/key.pem ubuntu@10.0.3.134 "bash /home/ubuntu/Copycode/scripts/install.sh"'
-                sh 'ssh -i /home/ubuntu/key.pem ubuntu@10.0.3.134 "bash /home/ubuntu/Copycode/scripts/mv.sh"'           
+                sh 'ssh -i /home/ubuntu/key.pem ubuntu@10.0.3.134 "bash /home/ubuntu/Chatapp/scripts/install.sh"'
+                sh 'ssh -i /home/ubuntu/key.pem ubuntu@10.0.3.134 "bash /home/ubuntu/Chatapp/scripts/mv.sh"'           
             
             }
 
