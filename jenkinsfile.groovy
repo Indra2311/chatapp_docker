@@ -7,23 +7,7 @@ pipeline {				//indicate the job is written in Declarative Pipeline
             }
         
         }
-        stage ("SonarQube Analysis") {
-            steps {
-                withSonarQubeEnv('chatapp-sonar')
-                    sh "/opt/sonarqube/bin"
-            }
-        }   
-
-        stage ("Quality gate") {
-            steps {
-                timeout(time: 3, unit: 'MINUTES') {
-                timeout(time: 1, unit: 'HOURS') {
-                    waitForQualityGate abortPipeline: true  
-                }
-
-            }
-        }  
-        }
+        
 
 
         stage ("build") {		//an arbitrary stage name
