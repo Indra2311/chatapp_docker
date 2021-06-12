@@ -7,7 +7,25 @@ pipeline {				//indicate the job is written in Declarative Pipeline
             }
         
         }
-        
+        stage ("SonarQube Analysis") {
+            steps {
+                withSonarQubeEnv('chatapp-sonar')
+                    sh "/opt/sonarqube/bin"
+            }
+        }   
+
+        stage ("Quality gate") {
+            steps {
+                timeout(time: 3, unit: 'MINUTES') {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true  
+                }
+
+            }
+        }  
+        }
+
+
         stage ("build") {		//an arbitrary stage name
             steps {
                 sh 'rsync -r -e  "ssh -i /home/ubuntu/key.pem" /var/lib/jenkins/workspace/Chatapp ubuntu@10.0.3.134:/home/ubuntu/'	//this is where we specify which job to invoke.
