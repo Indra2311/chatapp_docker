@@ -9,8 +9,10 @@ pipeline {				//indicate the job is written in Declarative Pipeline
         }
         stage ("SonarQube Analysis") {
             steps {
-                withSonarQubeEnv('chatapp-sonar')
-                   
+                withSonarQubeEnv('chatapp-sonar'){
+                    sh "/opt/sonar-scanner/bin/sonar-scanner"
+                
+                }   
             }
         }   
 
