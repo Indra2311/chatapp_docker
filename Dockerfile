@@ -1,4 +1,5 @@
 FROM python:3.6
+LABEL "backend"="backend"
 RUN apt-get update
 RUN apt-get install --yes python3
 RUN apt-get install --yes python3-pip
