@@ -106,7 +106,7 @@ DATABASES = {
         'NAME': 'mytest',
         'USER': 'admin',
         'PASSWORD': 'khan1234',
-        'HOST': '172.17.0.5',
+        'HOST': 'mysql_container',
         'PORT': '3306',
     }
 }
