@@ -19,7 +19,7 @@ services:
     links:
     - mysql
     volumes:
-    - /home/ubuntu/new_chatapp1:/new_chatapp1
+    - /home/ubuntu/new_chatapp1:/new_chtapp1
 
   frontend:
     image: frontend_image
