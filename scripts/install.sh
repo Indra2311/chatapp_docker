@@ -10,6 +10,7 @@
    sudo rm -rf /home/ubuntu/new_chatapp1/sonar-project.properties
    sudo rm -rf /home/ubuntu/new_chatapp1/Dockerfile
    sudo rm -rf /home/ubuntu/new_chatapp1/docker-compose.yml
+   sudo rm -rf /home/ubuntu/new_chatapp1/backend
 
 
 
