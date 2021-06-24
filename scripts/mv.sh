@@ -8,5 +8,5 @@
    sudo mv /home/ubuntu/Docker-chatapp/Database /home/ubuntu/new_chatapp1
    sudo mv /home/ubuntu/Docker-chatapp/Frontend /home/ubuntu/new_chatapp1
    sudo mv /home/ubuntu/Docker-chatapp/Dockerfile /home/ubuntu/new_chatapp1
-   #sudo mv /home/ubuntu/Docker-chatapp/docker-compose.yml /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/backend /home/ubuntu/new_chatapp1
    
