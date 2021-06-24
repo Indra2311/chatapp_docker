@@ -24,5 +24,8 @@ fi
 if [ -f /home/ubuntu/new_chatapp1/Dockerfile ]; then
 sudo rm -rf /home/ubuntu/new_chatapp1/Dockerfile
 fi
+if [ -f /home/ubuntu/new_chatapp1/docker-compose.yml ]; then
+sudo rm -rf /home/ubuntu/new_chatapp1/docker-compose.yml
+fi
 
 
