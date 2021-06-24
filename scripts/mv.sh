@@ -1,6 +1,6 @@
 #!/bin/bash
    sudo mv /home/ubuntu/Docker-chatapp/.idea /home/ubuntu/new_chatapp1
-   sudo mv /home/ubuntu/Docker-chatapp/.github /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/.git /home/ubuntu/new_chatapp1
    sudo mv /home/ubuntu/Docker-chatapp/appspec.yml /home/ubuntu/new_chatapp1
    sudo mv /home/ubuntu/Docker-chatapp/scripts /home/ubuntu/new_chatapp1
    sudo mv /home/ubuntu/Docker-chatapp/fundoo /home/ubuntu/new_chatapp1
