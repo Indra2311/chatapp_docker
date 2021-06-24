@@ -15,7 +15,7 @@ if [ -f /home/ubuntu/new_chatapp1/Frontend ]; then
     sudo rm -rf /home/ubuntu/new_chatapp1/Frontend
 fi
 
-if [ -f /home/ubuntu/new_chatapp1/Frontend ]; then
+if [ -f /home/ubuntu/new_chatapp1/Database ]; then
 sudo rm -rf /home/ubuntu/new_chatapp1/Database
 fi
 if [ -f /home/ubuntu/new_chatapp1/sonar-project.properties ]; then
