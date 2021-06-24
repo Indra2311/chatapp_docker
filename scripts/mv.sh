@@ -1,8 +1,12 @@
 #!/bin/bash
-   sudo mv /home/ubuntu/Chatapp/.idea /home/ubuntu/new_chatapp
-   sudo mv /home/ubuntu/Chatapp/.github /home/ubuntu/new_chatapp
-   sudo mv /home/ubuntu/Chatapp/appspec.yml /home/ubuntu/new_chatapp
-   sudo mv /home/ubuntu/Chatapp/scripts /home/ubuntu/new_chatapp
-   sudo mv /home/ubuntu/Chatapp/fundoo /home/ubuntu/new_chatapp
-   sudo mv /home/ubuntu/Chatapp/requirements.txt /home/ubuntu/new_chatapp
+   sudo mv /home/ubuntu/Docker-chatapp/.idea /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/.github /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/appspec.yml /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/scripts /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/fundoo /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/requirements.txt /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/Database /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/Frontend /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/Dockerfile /home/ubuntu/new_chatapp1
+   sudo mv /home/ubuntu/Docker-chatapp/docker-compose.yml /home/ubuntu/new_chatapp1
    
