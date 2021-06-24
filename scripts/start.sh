@@ -1,6 +1,4 @@
 #!/bin/bash
 
-sudo systemctl daemon-reload
-sudo systemctl start chatapp
-sudo systemctl restart chatapp
+docker-compose up --build -d
 
