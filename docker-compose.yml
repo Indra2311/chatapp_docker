@@ -1,17 +1,23 @@
 version: '3'
 services:
   mysql:
-    image: 341422105113.dkr.ecr.us-east-1.amazonaws.com/db_image:latest
+    image: mysql_db
+    build: /home/ubuntu/new_chatapp1/Database
     container_name: mydb
     volumes:
     - mysqldata:/var/lib/mysql
   backend:
-    image: 341422105113.dkr.ecr.us-east-1.amazonaws.com/backend_img:latest
+    image: backend_image
+    build: /home/ubuntu/new_chatapp1
     container_name: backend
     links:
     - mysql
+    volumes:
+    - /home/ubuntu/new_chatapp1:/new_chatapp1
+
   frontend:
-    image: 341422105113.dkr.ecr.us-east-1.amazonaws.com/frontend_img:latest
+    image: frontend_image
+    build: /home/ubuntu/new_chatapp1/Frontend 
     container_name: frontend
     links:
     - backend
