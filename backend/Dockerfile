@@ -1,4 +1,4 @@
-FROM basechatappimage
+FROM base_image
 #WORKDIR /new_chatapp/
 #RUN pip3 install -r requirements.txt
 
