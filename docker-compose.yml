@@ -28,6 +28,16 @@ services:
     links:
     - backend
     ports:
+    - 81:80
+
+  proxy:
+    image: proxy_image
+    build: /home/ubuntu/new_chatapp1/proxy
+    container_name: proxy_container
+    links:
+    - frontend
+    ports:
     - 80:80
+
 volumes:
   mysqldata:
