@@ -5,5 +5,4 @@
   
   cd /home/ubuntu/new_chatapp1
   sudo docker build -t base_image .
-  #sudo docker-compose down
   sudo docker-compose up --build -d 
